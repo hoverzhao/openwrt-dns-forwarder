@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015 OpenWrt-dist
-# Copyright (C) 2015 Jian Chang <aa65535@live.com>
+# Copyright (C) 2015 Jian Chang <hoverzhao@live.com>
 #
 # This is free software, licensed under the GNU General Public License v3.
 # See /LICENSE for more information.
@@ -9,18 +9,18 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dns-forwarder
-PKG_VERSION:=1.2.1
+PKG_VERSION:=1.2.2
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/aa65535/hev-dns-forwarder.git
+PKG_SOURCE_URL:=https://github.com/hoverzhao/hev-dns-forwarder.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE)
-PKG_SOURCE_VERSION:=289e8c9c7167200668dff83b1e0cbce258665387
+PKG_SOURCE_VERSION:=495af5931755499b3cad515755157886b16f2fbc
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
-PKG_MAINTAINER:=Jian Chang <aa65535@live.com>
+PKG_MAINTAINER:=hoverzhao <painton@tom.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(PKG_SOURCE_SUBDIR)
 
@@ -32,7 +32,7 @@ define Package/dns-forwarder
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=Forwarding DNS queries on TCP transport
-	URL:=https://github.com/aa65535/hev-dns-forwarder
+	URL:=https://github.com/hoverzhao/hev-dns-forwarder
 endef
 
 define Package/dns-forwarder/description
