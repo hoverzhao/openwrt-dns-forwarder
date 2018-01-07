@@ -18,7 +18,7 @@ DNS-Forwarder for OpenWrt
    tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
    cd OpenWrt-SDK-ar71xx-*
    # 获取 Makefile
-   git clone https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
+   git clone https://github.com/hoverzhao/openwrt-dns-forwarder.git package/dns-forwarder
    # 选择要编译的包 Network -> dns-forwarder
    make menuconfig
    # 开始编译
@@ -33,8 +33,8 @@ DNS-Forwarder for OpenWrt
  - 建议作为 [ChinaDNS][3] 的上游服务器使用, 配置方法参考 [Wiki][W]  
 
 
- [1]: https://github.com/aa65535/hev-dns-forwarder
- [2]: https://github.com/aa65535/openwrt-dns-forwarder/releases/latest
+ [1]: https://github.com/hoverzhao/hev-dns-forwarder
+ [2]: https://github.com/hoverzhao/openwrt-dns-forwarder/releases/latest
  [3]: https://github.com/aa65535/openwrt-chinadns
  [B]: https://img.shields.io/github/release/aa65535/openwrt-dns-forwarder.svg
  [S]: https://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
